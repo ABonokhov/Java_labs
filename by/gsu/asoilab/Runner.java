@@ -1,13 +1,16 @@
 package by.gsu.asoilab;
 
 public class Runner {
-    public static void main(String[] args) { // переделать
+    public static void main(String[] args) { 
+    uniformMaterial1 steel = new uniformMaterial1("steel",7850);
+    uniformMaterial1 copper = new uniformMaterial1("copper",8500);
+    //uniformMaterial2 wire = new uniformMaterial2("steel",0.03);
+    
+    System.out.println(steel.toString());
+	System.out.println(copper.toString());
+    //System.out.println(wire.toString());
 
-    uniformMaterial1[] material = {
-        new uniformMaterial1 ("steel", 0.3),
-        new uniformMaterial1 ("cobalt", 0.4),
-    };
-    for (int i =0;i<2;i++)
-    System.out.println (material[i]);
+    
 }
 }
+

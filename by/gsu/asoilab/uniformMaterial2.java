@@ -5,6 +5,9 @@ package by.gsu.asoilab;
         private String material;
         private int volume;
 
+        public uniformMaterial2(String name, double d) {
+        }
+
         public String getName() {
             return name;
         }
@@ -37,7 +40,7 @@ package by.gsu.asoilab;
                     '}';
         }
 
-        public int getMass(){
+        public double getMass(){
             return uniformMaterial1.getDensity()*this.volume;
         
 }
