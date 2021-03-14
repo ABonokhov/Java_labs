@@ -5,10 +5,10 @@ public class uniformMaterial1 {
     private static double density;
 
 
-    public uniformMaterial1(String name, double d) {
+    public uniformMaterial1(String name, double density) {
         super();
         this.name = name;
-        uniformMaterial1.density = d;
+        uniformMaterial1.density = density;
     }
 
     public String getName() {
