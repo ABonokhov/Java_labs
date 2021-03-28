@@ -47,4 +47,7 @@ public abstract class Sweet {
     public void setPrice(float price) {
         this.price = price;
     }
+    public int getSugarAmount() {
+		return sugarCount;
+	}
 }
