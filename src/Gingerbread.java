@@ -1,4 +1,5 @@
 package src;
+
 public class Gingerbread extends Sweet {
     private boolean raisins; //изюм
     private boolean honey; //мёд
