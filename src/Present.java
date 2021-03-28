@@ -44,10 +44,20 @@ public class Present implements Iterable <Sweet> {
             });
     
         }
+
+        public int getPresentWeight() {
+
+            int weight = 0;
+    
+            for (Sweet sweets : list) {
+                weight += sweets.getWeight();
+            }
+    
+            return weight;
+        }
 		
 
 		
-
 
 
     @Override
