@@ -8,6 +8,5 @@ public class FileUtils {
 
 		List<Sweet> sweetsList = new ArrayList<>();
         return sweetsList;
-
 }
 }
