@@ -1,6 +1,8 @@
 package by.gsu.pms;
 
-public class Student {
+import java.io.Serializable;
+
+public class Students implements Serializable {
     private String surname;
     private int age;
     private int debts; // долги по учебе
@@ -44,6 +46,4 @@ public class Student {
         System.out.println("Age = " + age);
         System.out.println("Debts = " + debts);
     }
-}
-
 }
