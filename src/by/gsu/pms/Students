@@ -41,9 +41,16 @@ public class Students implements Serializable {
     public void setDebts(int debts) {
         this.debts = debts;
     }
+
+    public String toString(){
+        return valueOf(surname) + "," + valueOf(age) + "," + valueOf(debts) + ".";
+    }
+
+
+
     public void show () {
-        System.out.println("Surname  = " + surname);
-        System.out.println("Age = " + age);
-        System.out.println("Debts = " + debts);
+        System.out.println("Surname  = " + valueof(surname);
+        System.out.println("Age = " + valueof(age);
+        System.out.println("Debts = " + valueof(debts);
     }
 }
