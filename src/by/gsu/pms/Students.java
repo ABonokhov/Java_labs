@@ -43,14 +43,14 @@ public class Students implements Serializable {
     }
 
     public String toString(){
-        return valueOf(surname) + "," + valueOf(age) + "," + valueOf(debts) + ".";
+        return String.valueOf(surname) + "," + Integer.valueOf(age) + "," + Integer.valueOf(debts) + ".";
     }
 
 
 
     public void show () {
-        System.out.println("Surname  = " + valueof(surname);
-        System.out.println("Age = " + valueof(age);
-        System.out.println("Debts = " + valueof(debts);
+        System.out.println("Surname  = " + String.valueOf(surname));
+        System.out.println("Age = " + Integer.valueOf(age));
+        System.out.println("Debts = " + Integer.valueOf(debts));
     }
 }
