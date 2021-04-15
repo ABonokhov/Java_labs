@@ -3,6 +3,7 @@ package by.gsu.pms;
 import java.io.Serializable;
 
 public class Students implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String surname;
     private int age;
     private int debts; // долги по учебе
@@ -43,7 +44,7 @@ public class Students implements Serializable {
     }
 
     public String toString(){
-        return String.valueOf(surname) + "," + Integer.valueOf(age) + "," + Integer.valueOf(debts) + ".";
+        return surname + "," + age + "," +debts + ".";
     }
 
 
@@ -52,5 +53,7 @@ public class Students implements Serializable {
         System.out.println("Surname  = " + String.valueOf(surname));
         System.out.println("Age = " + Integer.valueOf(age));
         System.out.println("Debts = " + Integer.valueOf(debts));
+        
+
     }
 }
