@@ -51,9 +51,9 @@ public class Students implements Serializable {
 
 
     public void show () {
-        System.out.println("Surname  = " + String.valueOf(surname));
-        System.out.println("Age = " + Integer.valueOf(age));
-        System.out.println("Debts = " + Integer.valueOf(debts));
+        System.out.println("Surname  = " + surname);
+        System.out.println("Age = " + age);
+        System.out.println("Debts = " + debts);
         
 
     }

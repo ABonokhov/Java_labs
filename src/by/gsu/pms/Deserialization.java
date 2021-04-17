@@ -6,21 +6,19 @@ import java.io.ObjectInputStream;
 public class Deserialization {
 
     public Students[] deserialize() throws FileNotFoundException, IOException, ClassNotFoundException{
-        Students[] student = null;
+        Students[] newstudent = null; // десериализация в новый список
         try 
         {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Students.dat"));
-        student=(Students[])ois.readObject();
+        newstudent=(Students[])ois.readObject();
         ois.close();
         }
-        catch(Exception e){
+        catch(IOException e){
+            System.out.println("deserialized");
             System.out.println(e.getMessage());
+            System.out.println(newstudent);
         }
-            //System.out.println();
-        return student;
-
+        return newstudent;
     }
-
-    
 }
 
