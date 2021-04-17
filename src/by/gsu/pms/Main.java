@@ -26,5 +26,24 @@ Serialization ser = new Serialization();
         for (Students newstudent : NewStudents) {
             System.out.println(newstudent);
         }
+        int totalAge=0;
+        int totalDebts=0;
+        for (Students newstudent:NewStudents) {
+            if (student !=null){
+                totalAge+=newstudent.getAge();
+                newstudent.show();
+                System.out.println("______________");
+            }
+            if (newstudent != null) {
+                if (newstudent.getDebts() !=0) {
+                   totalDebts++;
+                }
+                //System.out.println();
+    }
+    int avgAge=totalAge/student.length;
+    System.out.println("Average age of all students = " + avgAge);
+    System.out.println("Students with debts = " + totalDebts);
+}
+       
     }
 }
