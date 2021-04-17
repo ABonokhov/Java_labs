@@ -1,5 +1,3 @@
-package by.gsu.pms;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,15 +10,13 @@ public class Deserialization {
         try 
         {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Students.dat"));
-        ois.close();
-
         student=(Students[])ois.readObject();
-       // System.out.println(student); // проверить
-
+        ois.close();
         }
-        catch(Exception ex){
-            System.out.println(ex.getMessage());
+        catch(Exception e){
+            System.out.println(e.getMessage());
         }
+            //System.out.println();
         return student;
 
     }

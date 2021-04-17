@@ -1,5 +1,3 @@
-package by.gsu.pms;
-
 import java.io.Serializable;
 
 public class Students implements Serializable {
@@ -7,6 +5,8 @@ public class Students implements Serializable {
     private String surname;
     private int age;
     private int debts; // долги по учебе
+
+    
 
     public Students(String surname, int age, int debts) {
         super();
@@ -43,10 +43,11 @@ public class Students implements Serializable {
         this.debts = debts;
     }
 
-    public String toString(){
-        return surname + "," + age + "," +debts + ".";
+    
+    @Override
+    public String toString() {
+        return "Students [ age=" + age + ", debts=" + debts + ", surname=" + surname + "]";
     }
-
 
 
     public void show () {

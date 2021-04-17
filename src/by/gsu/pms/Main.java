@@ -1,5 +1,3 @@
-package by.gsu.pms;
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -21,17 +19,12 @@ public class Main {
 };
 
 Serialization ser = new Serialization();
-    ser.serialize(student);
+        ser.serialize(student);
+        Deserialization deser = new Deserialization();
+        Students[] NewStudents = deser.deserialize();
 
-Deserialization deser = new Deserialization();
-    Students[] newstudent = deser.deserialize();
-
-        for (Students students : newstudent) {
-            System.out.println(students);
+        for (Students newstudent : NewStudents) {
+            System.out.println(newstudent);
         }
-
+    }
 }
-
-   
-}
-
