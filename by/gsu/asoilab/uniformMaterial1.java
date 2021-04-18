@@ -19,11 +19,11 @@ public class uniformMaterial1 {
         this.name = name;
     }
 
-    public static double getDensity() {
+    public static  double getDensity() {
         return density;
     }
 
-    public void setDensity(int density) {
+    public void setDensity(double density) {
         uniformMaterial1.density = density;
     }
 
