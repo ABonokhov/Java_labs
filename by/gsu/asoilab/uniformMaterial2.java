@@ -5,9 +5,14 @@ package by.gsu.asoilab;
         private uniformMaterial1 material;
         private static double volume;
 
+        public uniformMaterial2(){
+
+        }
+
         public uniformMaterial2(String name, uniformMaterial1 material,double volume) {
         this.material= material;
         this.name = name;
+        uniformMaterial2.volume=volume;
         }
 
         public String getName() {
@@ -35,16 +40,15 @@ package by.gsu.asoilab;
 
         @Override
         public String toString() {
-            return "uniformMaterial2 [material=" + material + ", name=" + name + ", volume=" + volume +"]";
+            return "uniformMaterial2 [material=" + material + ", name=" + name + ", volume=" + volume + uniformMaterial2.getMass()+"]";
         }
 
 
 
-        public static  double getMass(uniformMaterial1 steel){
-            return uniformMaterial1.getDensity()*volume;
+        public static double getMass(){
+            return uniformMaterial1.getDensity() * volume;
 
         
     }
         
 }
-    
