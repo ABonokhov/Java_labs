@@ -18,7 +18,7 @@ public class JsonUtils {
         }
         StringBuilder stringBuilder = new StringBuilder();
         // открываем соедиение к указанному URL
-        // помощью конструкции try-with-resources
+      
         try (BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()))) {
 
             String inputLine;
