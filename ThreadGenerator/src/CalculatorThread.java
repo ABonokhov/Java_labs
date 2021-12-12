@@ -1,23 +1,29 @@
+import java.util.Scanner;
+
 public class CalculatorThread extends Thread {
-    private int a;
+
     private double result = 1;
 
-    public CalculatorThread(int a) {
-        this.a = a;
+
+    Scanner scanner = new Scanner(System.in);
+
+    int a = scanner.nextInt();
+
+
+
+    public CalculatorThread(int result) {
     }
 
     public double getResult() {
-        for (int P = 2; P <= a; P++) {
-            for (int i = 2; i < P; i++) {
-                if (P % 2 == 0) {
-                    result *= P;
-                }
-
+        for (int i = 1; i <= a; i++) {
+            if (i % 2 == 0) {
+                result *= i;
             }
 
         }
         return result;
     }
+
 }
 
 
